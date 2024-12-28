@@ -99,7 +99,7 @@ class BinarySearchTree {
   min() {
     let currentNode = this.rootNode;
 
-    while (currentNode.left !== null) {
+    while (currentNode.left) {
       currentNode = currentNode.left;
     }
     return currentNode.data;
@@ -108,7 +108,7 @@ class BinarySearchTree {
   max() {
     let currentNode = this.rootNode;
 
-    while (currentNode.right !== null) {
+    while (currentNode.right) {
       currentNode = currentNode.right;
     }
     return currentNode.data;
